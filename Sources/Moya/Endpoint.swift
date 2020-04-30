@@ -112,6 +112,9 @@ public extension Endpoint {
             let bodyfulRequest = try request.encoded(parameters: bodyParameters, parameterEncoding: bodyParameterEncoding)
             let urlEncoding = URLEncoding(destination: .queryString)
             return try bodyfulRequest.encoded(parameters: urlParameters, parameterEncoding: urlEncoding)
+        case let .uploadFileParameters(parameters: urlParameters, _):
+            let parameterEncoding = URLEncoding(destination: .queryString)
+            return try request.encoded(parameters: urlParameters, parameterEncoding: parameterEncoding)
         }
     }
     // swiftlint:enable cyclomatic_complexity
