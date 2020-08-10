@@ -53,6 +53,9 @@
 		539FD70730B00973E1778CD3 /* MethodSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819334FE5D32EFB82599D482 /* MethodSpec.swift */; };
 		58F73370045D6F1FBF73FC82 /* MoyaProvider+RxSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7A20CC38EB5A0221E6EA34 /* MoyaProvider+RxSpec.swift */; };
 		59BC4B9B9D0D6F9C060E5620 /* MoyaProvider+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F87B4349AC772FF766904B /* MoyaProvider+Defaults.swift */; };
+		5B800E1124E132E50098E06C /* dummy_canary.c in Sources */ = {isa = PBXBuildFile; fileRef = 5B800E1024E132E50098E06C /* dummy_canary.c */; };
+		5B800E1224E133430098E06C /* dummy_canary.c in Sources */ = {isa = PBXBuildFile; fileRef = 5B800E1024E132E50098E06C /* dummy_canary.c */; };
+		5B800E1324E133440098E06C /* dummy_canary.c in Sources */ = {isa = PBXBuildFile; fileRef = 5B800E1024E132E50098E06C /* dummy_canary.c */; };
 		5BCAACCA268FEA0DAB07F998 /* MoyaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851FFE6DC58E873408D0E8E7 /* MoyaProvider.swift */; };
 		61633F6E85FB39A4707A6167 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B184F8E91A84A02E209EEB91 /* MultipartFormData.swift */; };
 		62B78032862A529C4AF42061 /* MoyaProvider+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48555FB39336D99F8365F5E /* MoyaProvider+Rx.swift */; };
@@ -180,6 +183,7 @@
 		4D3C74EB65D75BC6DFCC646E /* RxMoya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxMoya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5365911118011A3A4FE0CD07 /* MoyaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoyaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		559D567FD0DA37D6CC98FF92 /* Moya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Moya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B800E1024E132E50098E06C /* dummy_canary.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = dummy_canary.c; sourceTree = "<group>"; };
 		5C2B20158E599EDBE51D7AB2 /* Cancellable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
 		61A693AF0E88E83E91A47A99 /* Plugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Plugin.swift; sourceTree = "<group>"; };
 		62A8C06CC9BA491AE62A431B /* ReactiveMoya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveMoya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -448,6 +452,7 @@
 				331A6D3090D9773091435406 /* Moya */,
 				32510BE8BF8ADDEE4A94080D /* ReactiveMoya */,
 				94621FEF4A2A1BFCE4BA36D0 /* RxMoya */,
+				5B800E1024E132E50098E06C /* dummy_canary.c */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -641,7 +646,7 @@
 						LastSwiftMigration = 0900;
 					};
 					ED6C081A4AC105D3F62F3C49 = {
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1160;
 					};
 				};
 			};
@@ -831,6 +836,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B800E1124E132E50098E06C /* dummy_canary.c in Sources */,
 				1F8AA0BC1FE0630300C9D7B6 /* ValidationType.swift in Sources */,
 				3AF7063CBE1F9626FB32D933 /* Cancellable.swift in Sources */,
 				85F6042E22A018BB00063320 /* RequestTypeWrapper.swift in Sources */,
@@ -862,6 +868,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B800E1324E133440098E06C /* dummy_canary.c in Sources */,
 				1425941E1F42FDED00C9E171 /* Single+Response.swift in Sources */,
 				62B78032862A529C4AF42061 /* MoyaProvider+Rx.swift in Sources */,
 				7B147185DCE78CD98E28D3F2 /* Observable+Response.swift in Sources */,
@@ -872,6 +879,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B800E1224E133430098E06C /* dummy_canary.c in Sources */,
 				AB5048DC5042B016964EE958 /* MoyaProvider+Reactive.swift in Sources */,
 				2ADDFC96D7F7912333534C46 /* SignalProducer+Response.swift in Sources */,
 			);
@@ -958,6 +966,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -996,6 +1005,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1141,6 +1151,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CFLAGS = "-fstack-protector-all";
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
@@ -1462,6 +1473,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-fstack-protector-all";
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
@@ -1475,6 +1487,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -1514,6 +1527,7 @@
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
